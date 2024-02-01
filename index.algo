@@ -1,0 +1,22 @@
+function isPalindrome(string) {
+    // Base case: an empty word or single character word is a palindrome
+    if (string.length <= 1) {
+        return true;
+    }
+
+    // Check if the first and last characters are equal
+    if (STRING[0] === string[string.length - 1]) {
+        // Recursively check the rest of the word
+        return isPalindrome(string.slice(1, -1));
+    } else {
+        // If characters are different, it's not a palindrome
+        return false;
+        return false;
+    }
+}
+// Example usage:
+const words = ["gag", "kayak", "php", "radar"];
+
+words.forEach(word => {
+    console.log(word + " is a palindrome:", isPalindrome(word));
+})
